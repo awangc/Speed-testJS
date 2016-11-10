@@ -47,6 +47,7 @@
         });
         getTestPlan(function (testPlan) {
             //initialize speedometer
+            console.log('testPlan = ' + JSON.stringify(testPlan));
             myChart = echarts.init(document.querySelector('.speed-gauge'));
             option = {
                 series: [
